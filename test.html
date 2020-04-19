@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style/name.css">
+    <title>html学习</title>
+    <!--style对应css样式，单位为px像素，%百分比-->
+    <style>
+        /*div{width:100px;height:100px;background-color:blue}*/
+        #div1{width:1500px;height:800px;background-image:url(/static/image/1.jpg);background-attachment:fixed}
+        #div2{width:1500px;height:700px;background-image:url(/static/image/2.jpg);background-attachment:fixed}
+    </style>
+</head>
+<body>
+    <h1>学习html</h1>
+    <h2>
+        第一部分：链接
+        <!--target表示跳转到另一界面，新开一个 -->
+        <p>
+            <a href="https://www.baidu.com" target="_blank">百度一下</a>
+        </p>
+    </h2>
+    <h2>
+        第二部分：跳转锚点
+        <!-- 采用#号+id的形式来跳转锚点-->
+        <a href="#html">html</a>
+        <a href="#css">css</a>
+        <a href="#js">js</a>
+        <p id="html">html学习</p>
+        <p id="css">css学习</p>
+        <p id="js">js学习</p>
+    </h2>
+    <h2>
+        第三部分：无序列表
+        <!--ul和li为最外层容器和列表项，中间不能有其他标签-->
+        <ul type="circle">
+            <li>第一项</li>
+            <li>第二项</li>
+        </ul>
+    </h2>
+    <h2>
+        第四部分：有序列表
+        <ol type="A">
+            <li><a href="#">第一项</a></li>
+            <li><a href="#">第二项</a></li>
+            <li><a href="#">第三项</a></li>
+        </ol>
+    </h2>
+    <h2>
+        第五部分：定义列表
+        <!--列表项需要添加标题和对标题进行描述的内容-->
+        <dl>
+            <dt>html</dt>
+            <dd>超文本标记语言</dd>
+            <dt>css</dt>
+            <dd>层叠样式表</dd>
+        </dl>
+    </h2>
+    <h2>
+        第六部分：表格标签
+        <!--th为表头，td为具体项-->
+        <!--border为边框像素大小，cellpadding为填充距离-->
+        <table border="1" cellpadding="30">
+            <caption>天气预报</caption>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>天气情况</th>
+                    <th>出行情况</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020年1月1日</td>
+                    <td><img  src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1587133924547&amp;di=ad8e747628c0359986065d2e6670241a&amp;imgtype=0&amp;src=http%3A%2F%2Fis3-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple123%2Fv4%2F38%2Fdc%2Fba%2F38dcbab3-d785-556e-7f3f-e67ff719d227%2FAppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-85-220.png%2F320x0w.png" ></td>
+                    <td>出行正常</td>
+                </tr>
+            </tbody>
+        </table>
+    </h2>
+    <h2>
+        第七部分：表单标签
+        <form action="www.baidu.com">
+            <p>输入框：</p>
+            <input type="text" placeholder="请输入账号">
+            <p>密码框：</p>
+            <input type="password" placeholder="请输入密码">
+            <p>复选框</p>
+            <input type="checkbox" checked>苹果
+            <input type="checkbox" disabled>香蕉
+            <p>单选框</p>
+            <input type="radio" name="gender" id="man"><label for="man">男</label>
+            <input type="radio" name="gender" id="woman"><label for="woman">女</label>
+            <p>上传文件</p>
+            <input type="file">
+            <p>提交和重置</p>
+            <input type="submit">
+            <input type="reset">
+            <p>多行文本框</p>
+            <textarea  cols="30" rows="10"></textarea>
+            <p>下拉菜单</p>
+            <select >
+                <option selected disabled>请选择</option>
+                <option >北京</option>
+                <option >上海</option>
+                <option >南京</option>
+            </select>
+        </form>
+    </h2>
+    <h2>
+        第八部分：css
+        <!--css基本格式：选择器｛属性：值；属性：值｝-->
+        <div>这是一个块</div>
+    </h2>
+    <h2>
+        第九部分：css外部样式
+        <!-- 引入css文件  通过link标签引入 rel表示资源与页面的位置     -->
+    </h2>
+    <h2>
+        第十部分：背景变化
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </h2>
+    <h2>
+        第十一部分：边框样式
+        <p>
+            border-style:边框样式
+            <ul>
+                <li>
+                    solid:实线
+                    dashed：虚线
+                    dotted:点线
+                </li>
+            </ul>
+            border-width
+            border-color
+        </p>
+    </h2>
+    <h2>
+        第十二部分：css字体
+        font-family:字体样式
+        font-size:字体大小
+
+    </h2>
+</body>
+</html>
